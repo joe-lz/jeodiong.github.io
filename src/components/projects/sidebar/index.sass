@@ -1,0 +1,33 @@
+@import "../../../utils/mixin.sass"
+aside
+  position: fixed
+  right: 0
+  top: 300px
+  z-index: 100
+  box-shadow: $box-shadow
+  background: white
+  a
+    display: block
+    padding: 0 10px
+    text-align: left
+    line-height: 50px
+    color: $gray
+    cursor: pointer
+    font-weight: $fw-lg
+    border-bottom: $border
+    &:hover
+      background: $bg-color
+      color: $main-color
+    &:last-child
+      border-bottom: none
+    i
+      margin-right: 5px
+      position: relative
+      top: 2px
+      font-size: 16px
+    .icon-home
+      font-size: 17px
+@include small-screen
+  aside
+    top: initial
+    bottom: 0

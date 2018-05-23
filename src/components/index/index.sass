@@ -1,0 +1,57 @@
+@import "../../utils/mixin.sass"
+.one-wrapper
+  .two-wrapper
+    .list-wrapper
+      margin: 100px auto
+      max-width: 1000px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      .list-item
+        margin-bottom: 30px
+        padding: 15px
+        display: inline-block
+        overflow: hidden
+        width: 300px
+        border: 1px solid rgba(0,0,0,0.05)
+        border-radius: 10px
+        color: $f-color
+        font-weight: $fw-lg
+        font-size: $fs-lg
+        transition: 0.2s ease-in
+        &.disable
+          background: $bg-color
+          color: $gray
+          cursor: not-allowed
+        &:hover
+          background: $bg-color
+        &.place-holder
+          opacity: 0
+          height: 0
+          overflow: hidden
+        .container
+          display: flex
+          width: 100%
+          height: 100%
+        .left
+          display: flex
+          align-items: center
+          width: 60px
+          img
+            width: 100%
+        .con
+          flex: 1
+          padding-top: 8px
+          padding-left: 10px
+          .title
+            margin-bottom: 5px
+          .desc
+            font-size: $fs-sm
+            color: $gray
+
+@include small-screen
+  .one-wrapper
+    .two-wrapper
+      .list-wrapper
+        a
+          margin: 0 auto

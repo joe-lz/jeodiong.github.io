@@ -1,0 +1,16 @@
+.one-wrapper.lgbt-wrapper
+  Github(link='https://github.com/jeodiong/QAF')
+  SideBar
+  nav.nav-wrapper
+    .container
+      .logo-wrapper
+        img(src="/static/projects/qaf/logo.png", alt="")
+        span 同志亦凡人
+      .lists-wrapper
+        router-link.list-item(:to='{name: "ProjectsQAF"}') {{ $t("message.projects.todokit.nav.features") }}
+        a.list-item(target='_blank' href="https://github.com/jeodiong/QAF/issues") {{ $t("message.projects.todokit.nav.issues") }}
+        a.list-item(target='_blank' href="https://github.com/jeodiong") {{ $t("message.projects.todokit.nav.about") }}
+      .star-number  
+        iframe(src="https://ghbtns.com/github-btn.html?user=jeodiong&repo=qaf&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px")
+  .two-wrapper
+    section.container

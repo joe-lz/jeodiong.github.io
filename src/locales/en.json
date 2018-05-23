@@ -1,0 +1,26 @@
+{
+  "message": {
+    "home": "Home",
+    "projects": {
+      "todokit": {
+        "name": "TodoKit",
+        "nav": {
+          "features": "Features",
+          "versions": "Versions",
+          "issues": "Issues",
+          "about": "About"
+        },
+        "banner": {
+          "slogan": "A bug and issue tracking software. Helps your teams find, record and track bugs in their projects.",
+          "download": "Download"
+        },
+        "hotpoints": {
+          "OpenSource": "Open Source",
+          "notified": "Get notified",
+          "bugs": "Capture and track bugs",
+          "Assign": "Assign and prioritize"
+        }
+      }
+    }
+  }
+}

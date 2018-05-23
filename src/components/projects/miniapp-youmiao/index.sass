@@ -1,0 +1,105 @@
+@import "../../../utils/mixin.sass"
+@import '../todokit/index.sass'
+
+.lgbt-wrapper
+  nav
+  .two-wrapper
+    height: 100%
+    section
+      position: relative
+      display: flex
+      height: 80vh
+      max-width: 800px
+      &.section-reverse
+        margin-bottom: 100px
+        .con
+          padding-left: 150px
+        .right
+          width: 300px
+          .screenshot
+      .left
+        position: relative
+        flex: 1
+        .con
+          position: absolute
+          top: 50%
+          transform: translate(0, -50%)
+          width: 100%
+        .title
+          margin-bottom: 50px
+          font-size: 6rem
+          color: $main-color
+          letter-spacing: 5px
+          font-weight: bold
+        .desc
+          width: 80%
+          max-width: 600px
+          line-height: 35px
+          font-size: $fs-max
+          color: $f-color
+        .wx-con
+          margin-top: 50px
+          width: 100px
+          p
+            font-weight: bold
+            text-align: center
+            line-height: 30px
+            font-size: $fs-nm
+          img
+            width: 100%
+      .right
+        position: relative
+        width: 250px
+        .screenshot
+          position: absolute
+          top: 53%
+          transform: translate(0, -50%)
+          width: 100%
+@include max-screen
+  .lgbt-wrapper .two-wrapper section .right
+    width: 300px
+
+@include small-screen
+  .lgbt-wrapper
+    height: initial
+    nav
+      position: relative
+      padding-left: 10px
+      .logo-wrapper
+        margin-right: 50px
+      .lists-wrapper
+        display: none
+      .star-number
+        display: none
+
+    .two-wrapper
+      .container
+        display: block !important
+      section
+        height: initial
+        &.section-reverse
+          margin-bottom: 100px
+          .con
+            padding-left: 0
+          .right
+            width: 300px
+            .screenshot
+        .left
+          .con
+            position: relative
+            top: 0
+            transform: translate(0)
+            text-align: center
+            .desc
+              margin: 0 auto
+            .wx-con
+              margin: 0 auto
+              margin-top: 50px
+        .right
+          position: relative
+          margin: 50px auto
+          .screenshot
+            display: block
+            position: relative
+            top: 0
+            transform: translate(0)

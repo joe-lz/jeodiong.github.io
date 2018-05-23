@@ -1,0 +1,35 @@
+.one-wrapper.lgbt-wrapper
+  Github(link='https://github.com/jeodiong')
+  SideBar
+  nav.nav-wrapper
+    .container
+      .logo-wrapper
+        img(src="/static/projects/youmiao/logo.png", alt="")
+        span Youmiao
+      .lists-wrapper
+        router-link.list-item(:to='{name: "ProjectsYoumiao"}') {{ $t("message.projects.todokit.nav.features") }}
+        //- a.list-item(target='_blank' href="https://github.com/jeodiong/lgbt-history-cn/issues") {{ $t("message.projects.todokit.nav.issues") }}
+        a.list-item(target='_blank' href="https://github.com/jeodiong") {{ $t("message.projects.todokit.nav.about") }}
+      //- .star-number  
+        //- iframe(src="https://ghbtns.com/github-btn.html?user=jeodiong&repo=lgbt-history-cn&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px")
+  .two-wrapper
+    section.container
+      .left
+        .con
+          p.title 有喵小程序
+          p.desc 在这里能租到这个地球上各类好看的好用的包包，生活更自由。
+          .wx-con 
+            img.qrcode(src="/static/projects/youmiao/qrcode.jpg", alt="")
+            p 微信扫一扫
+      .right
+        img.screenshot(src="/static/projects/youmiao/iphone.jpg", alt="")
+    section.container.section-reverse
+      .right
+        img.screenshot(src="/static/projects/youmiao/iphone2.jpg", alt="")
+      .left
+        .con
+          p.title 有喵H5
+          p.desc 在这里能租到这个地球上各类好看的好用的包包，生活更自由。
+          .wx-con 
+            img.qrcode(src="/static/projects/youmiao/qrcode2.png", alt="")
+            p 微信扫一扫

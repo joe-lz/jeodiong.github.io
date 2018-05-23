@@ -1,0 +1,56 @@
+.one-wrapper
+  Github(link='https://github.com/jeodiong/TodoKit')
+  SideBar
+  nav.nav-wrapper
+    .container
+      .logo-wrapper
+        img(src="/static/projects/todokit/logo.png", alt="")
+        span TodoKit
+      .lists-wrapper
+        router-link.list-item(:to='{name: "ProjectsTodoKit"}') {{ $t("message.projects.todokit.nav.features") }}
+        a.list-item(target='_blank' href="https://github.com/jeodiong/TodoKit/releases") {{ $t("message.projects.todokit.nav.versions") }}
+        a.list-item(target='_blank' href="https://github.com/jeodiong/TodoKit/issues") {{ $t("message.projects.todokit.nav.issues") }}
+        a.list-item(target='_blank' href="https://github.com/jeodiong") {{ $t("message.projects.todokit.nav.about") }}
+      .star-number  
+        iframe(src="https://ghbtns.com/github-btn.html?user=jeodiong&repo=TodoKit&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px")
+  .two-wrapper
+    section.banner-wrapper.container
+      p.title {{ $t("message.projects.todokit.name") }}
+      p.desc {{ $t("message.projects.todokit.banner.slogan") }}
+      .download-wrapper
+        a.btn-download(target='_blank' href="https://github.com/jeodiong/TodoKit/releases") {{ $t("message.projects.todokit.banner.download") }}
+        p Mac/Windows
+    section.hot-points.container
+      .list-item
+        .icon-wrapper
+          i.iconfont.icon-github
+        .content
+          .title {{ $t("message.projects.todokit.hotpoints.OpenSource") }}
+      .list-item
+        .icon-wrapper
+          i.iconfont.icon-notificationson
+        .content
+          .title {{ $t("message.projects.todokit.hotpoints.notified") }}
+      .list-item
+        .icon-wrapper
+          i.iconfont.icon-ic_create_new_folder
+        .content
+          .title {{ $t("message.projects.todokit.hotpoints.bugs") }}
+      .list-item
+        .icon-wrapper
+          i.iconfont.icon-liucheng2
+        .content
+          .title {{ $t("message.projects.todokit.hotpoints.Assign") }}
+
+    section.container.img-lists
+      .swiper-container
+        .swiper-wrapper
+          img.swiper-slide(src="http://oeu9bzhq1.bkt.clouddn.com/todokit/1.png", alt="")
+          img.swiper-slide(src="http://oeu9bzhq1.bkt.clouddn.com/todokit/2.png", alt="")
+          img.swiper-slide(src="http://oeu9bzhq1.bkt.clouddn.com/todokit/3.png", alt="")
+          img.swiper-slide(src="http://oeu9bzhq1.bkt.clouddn.com/todokit/4.png", alt="")
+          img.swiper-slide(src="http://oeu9bzhq1.bkt.clouddn.com/todokit/5.png", alt="")
+          img.swiper-slide(src="http://oeu9bzhq1.bkt.clouddn.com/todokit/6.png", alt="")
+        .swiper-pagination
+        .swiper-button-next
+        .swiper-button-prev

@@ -1,0 +1,5 @@
+const LANGUAGE_LOCAL = 'LANGUAGE_LOCAL'
+
+export default {
+  LANGUAGE_LOCAL
+}

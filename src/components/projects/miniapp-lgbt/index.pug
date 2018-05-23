@@ -1,0 +1,25 @@
+.one-wrapper.lgbt-wrapper
+  Github(link='https://github.com/jeodiong/lgbt-history-cn')
+  SideBar
+  nav.nav-wrapper
+    .container
+      .logo-wrapper
+        img(src="/static/projects/lgbt/logo.png", alt="")
+        span 一息之间
+      .lists-wrapper
+        router-link.list-item(:to='{name: "ProjectsMiniappLGBT"}') {{ $t("message.projects.todokit.nav.features") }}
+        a.list-item(target='_blank' href="https://github.com/jeodiong/lgbt-history-cn/issues") {{ $t("message.projects.todokit.nav.issues") }}
+        a.list-item(target='_blank' href="https://github.com/jeodiong") {{ $t("message.projects.todokit.nav.about") }}
+      .star-number  
+        iframe(src="https://ghbtns.com/github-btn.html?user=jeodiong&repo=lgbt-history-cn&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px")
+  .two-wrapper
+    section.container
+      .left
+        .con
+          p.title 一息之间
+          p.desc 记录中国LGBT历史时刻，与你共同见证中国LGBT权益发展史。
+          .wx-con 
+            img.qrcode(src="http://oeu9bzhq1.bkt.clouddn.com/gh_658c19a2c0dd_430.jpg", alt="")
+            p 微信扫一扫
+      .right
+        img.screenshot(src="http://oeu9bzhq1.bkt.clouddn.com/miniapp/Group.jpg", alt="")

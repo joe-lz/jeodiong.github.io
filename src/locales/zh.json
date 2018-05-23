@@ -1,0 +1,26 @@
+{
+  "message": {
+    "home": "主页",
+    "projects": {
+      "todokit": {
+        "name": "TodoKit",
+        "nav": {
+          "features": "功能",
+          "versions": "历史版本",
+          "issues": "意见反馈",
+          "about": "关于"
+        },
+        "banner": {
+          "slogan": "这是一个简单的需求和Bug追踪工具。麻雀虽小，五脏俱全。适合小团队使用，不需要复杂的安装过程。及时的消息通知，不会错过任务变动。",
+          "download": "下载"
+        },
+        "hotpoints": {
+          "OpenSource": "代码开源",
+          "notified": "及时通知",
+          "bugs": "记录问题",
+          "Assign": "问题流转"
+        }
+      }
+    }
+  }
+}
