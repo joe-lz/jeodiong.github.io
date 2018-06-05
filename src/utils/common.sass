@@ -9,6 +9,8 @@ html
   font-size: 10px
   min-width: 100vw
   min-height: 100vh
+  @include bindClass
+    background: red
 body
   // iphone x
   // padding-bottom: constant(safe-area-inset-bottom)
@@ -19,7 +21,6 @@ body
   overflow-x: hidden
   width: 100vw
   color: $f-color
-  // background: $bg-color
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 input, textarea, button, select
