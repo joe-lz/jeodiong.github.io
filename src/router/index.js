@@ -7,7 +7,6 @@ import ProjectsHome from '@/components/projects/home'
 import ProjectsTodoKit from '@/components/projects/todokit'
 import ProjectsMiniappLGBT from '@/components/projects/miniapp-lgbt'
 import ProjectsQAF from '@/components/projects/qaf'
-import ProjectsPlayer from '@/components/projects/player'
 import ProjectsYoumiao from '@/components/projects/miniapp-youmiao'
 
 import NotFound from '@/components/notfound'
@@ -34,7 +33,6 @@ export default new Router({
         { path: 'todokit', name: 'ProjectsTodoKit', component: ProjectsTodoKit, meta: {title: 'TodoKit - Joe\'s projects.'} },
         { path: 'lgbt', name: 'ProjectsMiniappLGBT', component: ProjectsMiniappLGBT, meta: {title: '一息之间 - Joe\'s projects.'} },
         { path: 'qaf', name: 'ProjectsQAF', component: ProjectsQAF, meta: {title: '同志亦凡人 - Joe\'s projects.'} },
-        { path: 'player', name: 'ProjectsPlayer', component: ProjectsPlayer, meta: {title: 'Players - Joe\'s projects.'} },
         { path: 'youmiao', name: 'ProjectsYoumiao', component: ProjectsYoumiao, meta: {title: 'Youmiao - Joe\'s projects.'} }
       ]
     },

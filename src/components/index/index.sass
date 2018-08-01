@@ -1,15 +1,28 @@
 @import "../../utils/mixin.sass"
 .one-wrapper
   .two-wrapper
+    .section-wrapper 
+      display: flex
+      padding: 50px 0
+      padding-bottom: 0
+      margin: 0 auto
+      max-width: 1200px
+      // border-bottom: 1px solid rgba(0,0,0,0.1)
+    .list-title
+      padding-right: 30px
+      font-size: 3rem
+      font-weight: bold
+      width: 150px
+      text-align: right
     .list-wrapper
-      margin: 100px auto
-      max-width: 1100px
+      flex: 1
       display: flex
       justify-content: space-between
       flex-wrap: wrap
       .list-item
         margin-bottom: 30px
-        padding: 15px
+        padding: 10px
+        padding-bottom: 15px
         display: inline-block
         overflow: hidden
         width: 340px
@@ -26,6 +39,7 @@
         &:hover
           background: $bg-color
         &.place-holder
+          padding: 0
           opacity: 0
           height: 0
           overflow: hidden
@@ -36,9 +50,9 @@
         .left
           display: flex
           align-items: center
-          width: 80px
+          width: 60px
           img
-            width: 80%
+            width: 100%
         .con
           flex: 1
           padding-top: 8px
